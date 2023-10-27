@@ -1,18 +1,58 @@
-## Getting Started
+# Electricity Billing System
+This is a GUI made using Java Swing.
+It lets User perform multiple operations like:-
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+
+1- User can Create his Personal login for security purposes.
+
+2- User can Add customers and Calculate their Electricity Bill.
+
+3- User can Pay Electricity Bills(Under Work).
+
+4- User can Generate Bill.
+
+## About Project:
+This Java application was created using VSCode .
+Additional library was added for the support of JDBC (Required to setup the connection between the Database and Java Application).
+It contains 9 different classes which works together to create a better user experience .
+
+->Splash Screen class
+
+->Login Screen class
+
+->Main System class
+
+->Add Customer class
+
+->Pay Bill class
+
+->Generate Bill class
+
+->Show Details class
+
+->Last Bill class
+
+->Connection Setup class(JDBC - MySQL)
+
+## Database (MySQL)
+Database for this Electricity Billing System contains 4 Tables
+
+
+->Login Table (UserName,Password)
+
+->Bill Table(MeterNumber,Units,Month,Amount)
+
+->Emp Table(Name, MeterNumber, Address, State, City, Email, Phone)
+
+->Tax Table(MeterLocation,MeterType,PhaseCode,BillType,Days,MeterRent,MCB_Rent,ServiceRent,GST)
+
+
+Java communicates with MySQL tables using JDBC which stands for Java Database Connectivity.
 
 ## Folder Structure
 
-The workspace contains two folders by default, where:
+The workspace contains:
 
 - `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
 
 Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).

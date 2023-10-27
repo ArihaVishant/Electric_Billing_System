@@ -12,7 +12,7 @@ public class pay_bill extends JFrame implements ActionListener{
         j.setEditable(false);
 
         try {
-            j.setPage("https://www.mytnb.com.my/");
+            j.setPage("https://www.xyz.com/");
         }catch (Exception e) {
             j.setContentType("text/html");
             j.setText("<html>Could not load</html>");
