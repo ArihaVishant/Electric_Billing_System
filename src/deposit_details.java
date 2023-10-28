@@ -43,6 +43,7 @@ public class deposit_details extends JFrame implements ActionListener{
 
         cmonth = new Choice();
         cmonth.setBounds(520, 20, 150, 20);
+        cmonth.add("All Months");
         cmonth.add("January");
         cmonth.add("February");
         cmonth.add("March");
@@ -88,16 +89,22 @@ public class deposit_details extends JFrame implements ActionListener{
 
     public void actionPerformed(ActionEvent ae) {
         if (ae.getSource() == search) {
-            String query = "select * from bill where meter = '"+meternumber.getSelectedItem()+"' and month = '"+cmonth.getSelectedItem()+"'";
+            String month = cmonth.getSelectedItem();
+            String query;
+            if (month.equals("All Months")) {
+                query = "select * from bill where meter = '"+meternumber.getSelectedItem()+"'";
+            } else {
+                query = "select * from bill where meter = '"+meternumber.getSelectedItem()+"' and month = '"+month+"'";
+            }
 
             try {
                 conn c1 = new conn();
                 ResultSet rs = c1.s.executeQuery(query);
                 table.setModel(DbUtils.resultSetToTableModel(rs));
             } catch (Exception e) {
-
+                e.printStackTrace();
             }
-        } else  {
+        } else {
             try {
                 table.print();
             } catch (Exception e) {

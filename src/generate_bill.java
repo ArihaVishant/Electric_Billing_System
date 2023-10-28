@@ -12,7 +12,7 @@ public class generate_bill extends JFrame implements ActionListener{
     generate_bill(){
 
         super("Generate Bill");
-        setSize(500,900);
+        setSize(500,700);
         setLayout(new BorderLayout());
 
         p1 = new JPanel();

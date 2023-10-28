@@ -3,7 +3,7 @@ import java.awt.event.*;
 import javax.swing.*;
 import java.sql.*;
 
-public class calculate_bill extends JFrame implements ActionListener
+public class deposit_bill extends JFrame implements ActionListener
 {
     JLabel l1,l2,l3,l4,l5;
     JTextField t1;
@@ -11,9 +11,9 @@ public class calculate_bill extends JFrame implements ActionListener
     JButton b1,b2;
     JPanel p,p2,p3;
 
-    calculate_bill(){
+    deposit_bill(){
 
-        setTitle("Calculate bill");
+        setTitle("Deposit bill");
 
         p = new JPanel();
         p2 = new JPanel();
@@ -22,7 +22,7 @@ public class calculate_bill extends JFrame implements ActionListener
         p.setLayout(new GridLayout(4,2,30,30));
         p.setBackground(Color.WHITE);
 
-        l1 = new JLabel("Calculate Electricity Bill");
+        l1 = new JLabel("Deposit Electricity Bill");
         l2 = new JLabel("Meter No");
         l2.setFont(new Font("Serif",Font.BOLD,16));
         l2.setForeground(Color.BLACK);
@@ -109,7 +109,7 @@ public class calculate_bill extends JFrame implements ActionListener
         b2.addActionListener(this);
 
         getContentPane().setBackground(Color.WHITE);
-        setSize(680,400);
+        setSize(680,500);
         setLocation(320,180);
     }
     public void actionPerformed(ActionEvent ae){
@@ -164,6 +164,6 @@ public class calculate_bill extends JFrame implements ActionListener
 
 
     public static void main(String[] args){
-        new calculate_bill().setVisible(true);
+        new deposit_bill().setVisible(true);
     }
 }

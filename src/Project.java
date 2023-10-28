@@ -93,7 +93,7 @@ public class Project extends JFrame implements ActionListener{
         /* Second Column */
         JMenu user = new JMenu("User");
         JMenuItem u1 = new JMenuItem("Pay Bill");
-        JMenuItem u2 = new JMenuItem("Calculate Bill");
+        JMenuItem u2 = new JMenuItem("Deposit Bill");
         JMenuItem u3 = new JMenuItem("Last Bill");
         user.setForeground(Color.BLACK);
         user.setFont(new Font("serif", Font.BOLD, 15));
@@ -261,8 +261,8 @@ public class Project extends JFrame implements ActionListener{
         else if(msg.equals("Deposit Details")){
             new deposit_details().setVisible(true);
 
-        }else if(msg.equals("Calculate Bill")){
-            new calculate_bill().setVisible(true);
+        }else if(msg.equals("Deposit Bill")){
+            new deposit_bill().setVisible(true);
 
         }else if(msg.equals("Pay Bill")){
             new pay_bill().setVisible(true);
