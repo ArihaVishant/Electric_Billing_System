@@ -56,3 +56,7 @@ The workspace contains:
 - `src`: the folder to maintain sources
 
 Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+
+## Reference
+
+This project is further work on https://github.com/Adarsh9616/Electricity_Billing_System by https://github.com/Adarsh9616
