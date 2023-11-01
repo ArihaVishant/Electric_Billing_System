@@ -3,7 +3,7 @@ This is a GUI made using Java Swing.
 It lets User perform multiple operations like:-
 
 
-1- User can Create his Personal login for security purposes.
+1- User can Create his Customer Profile.
 
 2- User can Add customers and Calculate their Electricity Bill.
 
@@ -16,15 +16,15 @@ This Java application was created using VSCode .
 Additional library was added for the support of JDBC (Required to setup the connection between the Database and Java Application).
 It contains 9 different classes which works together to create a better user experience .
 
-->Splash Screen class
-
-->Login Screen class
-
 ->Main System class
 
 ->Add Customer class
 
-->Pay Bill class
+->Show Customer class
+
+->Deposit Bill class
+
+->Deposit details class
 
 ->Generate Bill class
 
